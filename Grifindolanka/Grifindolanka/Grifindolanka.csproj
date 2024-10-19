@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EBA7EA48-1EEA-4D0F-AC4C-8DDB6D38F9E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Grifindolanka</RootNamespace>
+    <AssemblyName>Grifindolanka</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDepartments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddDepartments.Designer.cs">
+      <DependentUpon>AddDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applyleave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applyleave.Designer.cs">
+      <DependentUpon>Applyleave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Epmanalea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Epmanalea.Designer.cs">
+      <DependentUpon>Epmanalea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveBalance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LeaveBalance.Designer.cs">
+      <DependentUpon>LeaveBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormad.Designer.cs">
+      <DependentUpon>MainFormad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormfem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormfem.Designer.cs">
+      <DependentUpon>MainFormfem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageLeatyp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManageLeatyp.Designer.cs">
+      <DependentUpon>ManageLeatyp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manangeemp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manangeemp.Designer.cs">
+      <DependentUpon>Manangeemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viwe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viwe.Designer.cs">
+      <DependentUpon>Viwe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viweleavehistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viweleavehistory.Designer.cs">
+      <DependentUpon>viweleavehistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viwelh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viwelh.Designer.cs">
+      <DependentUpon>Viwelh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viwels.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viwels.Designer.cs">
+      <DependentUpon>Viwels.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddDepartments.resx">
+      <DependentUpon>AddDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applyleave.resx">
+      <DependentUpon>Applyleave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Epmanalea.resx">
+      <DependentUpon>Epmanalea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeaveBalance.resx">
+      <DependentUpon>LeaveBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormad.resx">
+      <DependentUpon>MainFormad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormfem.resx">
+      <DependentUpon>MainFormfem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageLeatyp.resx">
+      <DependentUpon>ManageLeatyp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manangeemp.resx">
+      <DependentUpon>Manangeemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viwe.resx">
+      <DependentUpon>Viwe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viweleavehistory.resx">
+      <DependentUpon>viweleavehistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viwelh.resx">
+      <DependentUpon>Viwelh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viwels.resx">
+      <DependentUpon>Viwels.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
